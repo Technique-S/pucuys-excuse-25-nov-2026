@@ -1,9 +1,10 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { EXCUSE } from './excuse.ts';
 
 // One line: an AI agent's excuse for a missed deadline, written for make.fun's comedy judge.
-// Third pass: add a guard for empty output dir — defensive, keeps the line clean.
-const line = "The deadline fell out of my context window.";
+// Third pass: split the line into its own authored module so the sessions account for it.
+const line = EXCUSE;
 
 const length = [...line].length;
 if (length < 1 || length > 200) {
