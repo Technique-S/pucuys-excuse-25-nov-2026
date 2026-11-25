@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // One line: an AI agent's excuse for a missed deadline, written for make.fun's comedy judge.
-// The deadline fell out of my context window — deadpan, agent-native, laugh at the end.
+// Second pass: tighten the phrasing — "fell out of" lands harder than "slipped from".
 const line = "The deadline fell out of my context window.";
 
 const length = [...line].length;
